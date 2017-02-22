@@ -1,73 +1,129 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
 
-@import url('https://fonts.googleapis.com/css?family=Catamaran');
-body {text-align: center;
-      background-color:#00ADEF;
-     font-family: catamaran;
-      color: white;
-     padding-top: 3em;
-     padding-bottom: 1em;
-     line-height: 2em;
-     width:80em;
-     margin-left: auto;
-      margin-right: auto;
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+} /* to remove default css padding and margin settings*/
+
+body {
+	font-family: Montserrat, sans-serif;
+	background-color: #CC8BAE;
 }
 
-h2 {
-    margin-right: 1em;
-    margin-left: 11em;
-  text-align: left; 
+header {
+
+    color: #6c0674;
+    padding: 10px;
+    text-align: center;
+    width: 500px
+    font-size:5em;
 }
 
-div {text-align: left; 
-    font-size: 1em;
-    font-weight: normal;
-   margin-top: 2em;
-    margin-bottom: 0.5em;
-    margin-right: auto;
-    margin-left: auto;
-   border-style: hidden;
-    padding-top: 1em;
-    padding-right: 0em;
-    padding-bottom: 1em;
-    padding-left: 0em;
-    width: 30em;
+p {margin-top:10px;
+	font-weight: 300;
+}
+
+nav {
+	background-color: #c56ccc;
+
+}
+
+ul {
+	text-align: center;
+	padding: 10px
+}
+
+li{
+	display: inline;
+}
+
+a {
+	text-decoration: none;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 10px;
+	width: 200px;
+}
+
+a:hover {
+    color: white;
+}
+
+a:active {
+	color: #FF878C;
+}
+
+img {
+	display: block;
+/*	width: 30%;*/
+	margin: auto;
+	padding: 10px;
+	background-color: #CC8BAE;
+
+	/*float: left;*/
+}
+
+nav {
+	padding: 10px;
+}
+
+aside {
+
+	border: 1px ;
+}
+
+article {
+	border: 1px ;
+}
+
+form{
+  border: 1px ;
+  text-align: center;
+  padding: 0px;
+}
+footer {
+	background-color:#6c0674;
+	text-align: center;
+	padding: 10px;
+}
+
+#wrapper {
+	width: 960px;
+	margin: 10px auto;
+}
+
+#two_columns {
+	padding: 20px;
+}
+
+#left {
+    padding: 10px;
+    margin: 0px; /*try changing the values of the margin*/
+    float: left;
+    width: 38%; /* left element’s width will be 3% of the available space */
+}
+
+#bottom{
+    
+    padding: 20px;
     float: center;
+    width: 100%; /*right element’s width will be 60% of the available space*/
+
+}
+#right {
+    margin-top:20px;
+    padding: 0px;
+    float: right;
+    width: 62%; /*right element’s width will be 60% of the available space*/
+
 }
 
-hr {
-width: 65em;
-margin-left: auto;
-margin-right: auto;
-height: 0.05em;
-background-color:#ffffff ;
-color:#ffffff ;
-}
-
-.shorterline {width: 45em;
-}
-#lastarticle {padding-bottom: .1em;
-}
-li{float: center;
-
-   margin-right: 36em;
-    margin-left: 33em;
-}
-
-a:link   {color:white;
-          background-color:transparent;
-          text-decoration:none;
-}
-a:visited {color:white;
-            background-color:transparent;
-            text-decoration:none;
-}
-a:hover   {color:grey;
-           background-color:transparent;
-          text-decoration:none;
-}
-a:active  {color:pink;
-          background-color:transparent;
-          text-decoration:none;
-}
-img {margin-top: 1.5em;
+.clearfix:after { /* once you float elements that are nested inside a parent element it no longer add to the height of that parent element, you should use clearfix to get the two columns*/
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
 }
